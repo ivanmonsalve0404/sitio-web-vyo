@@ -1,0 +1,40 @@
+<div class="accordionContainer">
+    <div class="accordionTitleContainer">
+        <h2 class="descriptionAccordion">Nuestros servicios</h2>
+    </div>
+
+    <div class="accordion-gallery-container">
+        <div class="accordion-section" [ngClass]="getShadowClass(selectedIndex)">
+            <div *ngFor="let item of accordionItems; let i = index" class="accordion-item" [class.active]="isActive(i)">
+                <div class="accordion-header" (click)="toggleAccordion(i)" [attr.aria-expanded]="isActive(i)"
+                    role="button" [attr.id]="'header-' + i" tabindex="0" [attr.aria-controls]="'content-' + i">
+                    <h3>{{item.title}}</h3>
+                    <span class="toggle-icon" [class.active]="isActive(i)"></span>
+                </div>
+                <div class="accordion-content" [id]="'content-' + i" role="region"
+                    [attr.aria-labelledby]="'header-' + i" [@slideInOut]="isActive(i) ? 'in' : 'out'">
+                    <p>{{item.content}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="galeryContainer">
+            <div class="image-container" [@fadeInOut]>
+                <img [src]="getCurrentImage().imageUrl" [alt]="getCurrentImage().imageTitle" class="feature-image">
+                <div class="image-overlay">
+                    <h4>{{getCurrentImage().imageTitle}}</h4>
+                    <p>{{getCurrentImage().imageDescription}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="button">
+        <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
+            </path>
+        </svg>
+        <a [routerLink]="['/proyectos']">Explorar</a>
+    </button>
+</div>

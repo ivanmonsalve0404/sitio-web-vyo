@@ -1,0 +1,37 @@
+<section>
+    <article class="cards-services-container">
+        <div class="cards-title-container">
+            <h2>Documentación Oficial</h2>
+        </div>
+        <div class="cards-description-container">
+            <p>Conoce los servicios que ofrecemos y cada uno de los proyectos que aportan valor a nuestro trabajo.</p>
+        </div>
+    
+        <div class="pdf-card-container">
+            <div class="pdf-card" *ngFor="let document of documents">
+                <div class="pdf-card-header">
+                    <div class="pdf-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img"
+                            aria-label="Icono de archivo PDF">
+                            <!-- Fondo del ícono -->
+                            <rect x="4" y="4" width="40" height="40" rx="8" fill="#E53935" />
+                            <!-- Pestaña superior -->
+                            <path d="M32 4h-8v12h12V8a4 4 0 00-4-4z" fill="#FFFFFF" />
+                            <!-- Texto PDF grande -->
+                            <text x="24" y="30" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold"
+                                font-family="Arial, sans-serif">
+                                PDF
+                            </text>
+                        </svg>
+                    </div>
+                    <a [href]="document.pdfUrl" target="_blank" class="open-button" aria-label="Abrir PDF">Abrir PDF</a>
+                </div>
+    
+                <div class="pdf-card-content">
+                    <h3 class="pdf-card-title">{{ document.title }}</h3>
+                    <p class="pdf-card-description">{{ document.description }}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>

@@ -1,0 +1,22 @@
+<section>
+    <article class="parallax-container">
+        <div class="parallax-bg"></div>
+        <div class="parallax-content">
+            <h1>¡Estamos construyendo algo increíble!</h1>
+            <p>Trabajamos arduamente por presentarles algo magnífico acerca de nosotros, estamos ansiosos de anunciarte
+                nuestro próximo reto.</p>
+            <app-back-button></app-back-button>
+        </div>
+    </article>
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            requestAnimationFrame(() => {
+                const parallaxBg = document.querySelector('.parallax-bg');
+                let scrollPosition = window.pageYOffset;
+                parallaxBg.style.transform = `scale(1) translateY(${scrollPosition * 0.5}px)`;
+            });
+        });
+    </script>
+</section>

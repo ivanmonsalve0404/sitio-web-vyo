@@ -1,0 +1,97 @@
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1; /* Añadido para manejar explícitamente la profundidad */
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://res.cloudinary.com/dkmvcyh3y/image/upload/v1733427957/architect-3979490_twptcj.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    transform: scale(1.1);
+    animation: smooth-entry 1.5s ease-out forwards;
+    z-index: 1; /* Mantenido en un nivel bajo */
+}
+
+.parallax-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2; /* Elevado para asegurar que el contenido esté por encima del fondo */
+    opacity: 0;
+    max-width: 800px;
+    padding: 0 20px;
+    animation: fade-in 1.5s ease-out 0.5s forwards;
+}
+
+.parallax-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-content p {
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.8;
+}
+
+@keyframes smooth-entry {
+    from {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .parallax-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .parallax-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .parallax-content h1 {
+        font-size: 2rem;
+    }
+
+    .parallax-content p {
+        font-size: 1rem;
+    }
+}
+
+.content-section {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+<section>
+    <article class="image-container">
+        <div id="carouselExampleIndicators" class="carousel slide" aria-live="polite" aria-atomic="true"
+            data-bs-ride="carousel" data-bs-interval="2500" role="region" aria-roledescription="carousel"
+            aria-label="Imágenes destacadas">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://res.cloudinary.com/dkmvcyh3y/image/upload/v1733244034/Mantenimientos_Locativos_zdkvpv.png"
+                        class="d-block w-100" alt="Imagen de Servicios">
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="cards-services-container">
+        <div class="cards-title-container">
+            <h2>Proyectos destacados</h2>
+        </div>
+        <div class="cards-description-container">
+            <p>Servicios integrales de mantenimiento locativo para garantizar el correcto funcionamiento y conservación
+                de instalaciones. Realizamos reparaciones estructurales, eléctricas, hidráulicas y estéticas, asegurando
+                espacios seguros y operativos para empresas e instituciones.</p>
+        </div>
+        <div class="cards-container">
+            <div class="card-container">
+                <div class="image-proyect-container"
+                    [routerLink]="['/proyectos/mantenimientos-locativos/mantenimiento-locativo-colegio-ld']">
+                    <img src="https://res.cloudinary.com/dyjf6o0iw/image/upload/v1733410776/file_49_wzgcff.jpg"
+                        alt="Project Image" class="feature-image">
+                    <div class="image-overlay">
+                        <i class="fa-solid fa-folder-closed" style="color: #7ADA00;"></i>
+                        <p>Ver proyecto</p>
+                    </div>
+                </div>
+                <div class="name-proyect-container">
+                    <p>Mantenimiento Locativo Colegio Leonardo Da Vinci</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <app-back-button></app-back-button>
+</section>

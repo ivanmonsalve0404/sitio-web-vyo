@@ -1,0 +1,86 @@
+<footer>
+    <div class="footerContainer">
+        <div class="footerItem">
+            <div class="footerLogo">
+                <img
+                    src="https://res.cloudinary.com/dyjf6o0iw/image/upload/v1728401664/Logo_VyO-removebg-preview_ugtcg1.png">
+            </div>
+            <div class="companyInfo">
+                <div class="companyInfoIconsContainer">
+                    <div class="iconItem">
+                        <i class="fa-brands fa-square-whatsapp fa-2x" style="color: #11ff00;"></i>
+                    </div>
+                    <div class="iconItem">
+                        <i class="fa-solid fa-envelope fa-2x" style="color: #11ff00;"></i>
+                    </div>
+                    <div class="iconItem">
+                        <i class="fa-solid fa-map-location-dot fa-2x" style="color: #11ff00;"></i>
+                    </div>
+                </div>
+                <div class="companyInfoLinksContainer">
+                    <div class="linkItem">
+                        <a href="https://api.whatsapp.com/send/?phone=573103509175&text&type=phone_number&app_absent=0"
+                            target="_blank">+57 310 350 9175</a>
+                    </div>
+                    <div class="linkItem">
+                        <button (click)="copyEmail($event)">proyectos&#64;vegayortiz.com.co</button>
+                    </div>
+                    <div class="linkItem">
+                        <a href="https://www.google.com/maps/place/Vega+y+Ortiz/@4.860848,-73.2660657,17z/data=!3m1!4b1!4m6!3m5!1s0x8e6ab36c5888f1e9:0xb886b80505090c77!8m2!3d4.8608427!4d-73.2634908!16s%2Fg%2F11q1sbpmr1?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">Calle 4 #4-29 - Santa Maria, Boyacá</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerSeparator"></div>
+        <div class="footerItem">
+            <div class="footerSlogan">
+                <h3>Un equipo más integro, más humano, más feliz!</h3>
+            </div>
+            <div class="footerLinks">
+                <ul class="footerRouterLinks">
+                    <li [routerLink]="['/inicio']">Inicio</li>
+                    <li [routerLink]="['/inicio']" fragment="nosotros">Nosotros</li>
+                    <li [routerLink]="['/proyectos']">Proyectos</li>
+                    <li [routerLink]="['/documentacion']">Documentación</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerSeparator"></div>
+        <div class="footerItem">
+            <div class="footerSloganSocial">
+                <h3>Síguenos y mantente al tanto de nuestras actualizaciones!</h3>
+            </div>
+            <div class="socialInfo">
+                <div class="socialInfoIconsContainer">
+                    <div class="socialIconItem">
+                        <i class="fa-brands fa-square-instagram fa-2x instagram-icon"></i>
+                    </div>
+                    <div class="socialIconItem">
+                        <i class="fa-brands fa-facebook fa-2x facebook-icon"></i>
+                    </div>
+
+                    <div class="socialIconItem">
+                        <i class="fa-brands fa-youtube fa-2x youtube-icon"></i>
+                    </div>
+                </div>
+                <div class="companyInfoLinksContainer">
+                    <div class="socialLinkItem">
+                        <a href="https://www.instagram.com/vegayortiz?igsh=MXBjZ3JpYTMxMWQybQ=="
+                            target="_blank">&#64;vegayortiz</a>
+                    </div>
+                    <div class="socialLinkItem">
+                        <a href="#">&#64;Vega y Ortiz SAS</a>
+                    </div>
+                    <div class="socialLinkItem">
+                        <a href="https://www.youtube.com/@vegayortizs.a.s6810" target="_blank">&#64;vegayortizsas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerRow">
+        <p class="footerCopyright">© Copyright 2022 - 2024 | Vega y Ortiz SAS | Todos los derechos reservados | <a
+                [routerLink]="['/aviso-legal']">Aviso legal y políticas de privacidad </a></p>
+    </div>
+</footer>

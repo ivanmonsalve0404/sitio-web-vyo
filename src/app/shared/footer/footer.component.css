@@ -1,0 +1,923 @@
+footer {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15); /* Adjusted shadow */
+  position: relative; /* Ensures shadow is visible */
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 85%;
+}
+
+.footerRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background-color: rgb(255, 255, 255);
+  margin: 15px 0;
+}
+
+.footerCopyright {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.footerCopyright a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #002b39;
+}
+
+.footerCopyright a:hover {
+  color: orange;
+}
+
+.footerItem {
+  flex: 1;
+  min-width: 200px;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+
+.footerSeparator {
+  display: block;
+  height: 250px;
+  border: 1.5px solid #00506a;
+  border-radius: 25px;
+}
+
+.footerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  margin-bottom: 10px;
+}
+
+.footerLogo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 110px;
+}
+
+.companyInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+.companyInfoIconsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 25%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 0px 5px;
+}
+
+.iconItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+}
+
+.companyInfoLinksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 75%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 0px 5px;
+}
+
+.linkItem {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.linkItem a,
+.linkItem button {
+  text-align: left;
+  font-size: 16px;
+  color: #002b39;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.linkItem a:hover,
+.linkItem button:hover {
+  color: orange;
+}
+
+.footerSlogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+}
+
+.footerSlogan h3 {
+  font-size: 28px;
+  color: #00506a;
+  text-align: center;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  margin: 15px 0px;
+}
+
+.footerRouterLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.footerRouterLinks li {
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.footerRouterLinks li:hover {
+  color: orange;
+}
+
+.footerSloganSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35%;
+}
+
+.footerSloganSocial h3 {
+  font-size: 28px;
+  color: #00506a;
+  text-align: center;
+}
+
+.socialInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65%;
+  margin: 15px 0px;
+}
+
+.socialInfoIconsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 40%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 0px 5px;
+}
+
+.socialIconItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+}
+
+.socialInfoLinksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 60%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 0px 5px;
+}
+
+.socialLinkItem {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.socialLinkItem a {
+  text-align: left;
+  font-size: 16px;
+  color: #002b39;
+  text-decoration: none;
+}
+
+.socialLinkItem a:hover {
+  color: orange !important;
+  cursor: pointer;
+}
+
+.instagram-icon {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 4px;
+}
+
+.facebook-icon {
+  background: linear-gradient(45deg, #3359f0, #1a45d2, #0c06b6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 3px;
+}
+
+.youtube-icon {
+  background: linear-gradient(45deg, #e82c2c, #f10f0f, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 128px) and (max-width: 575px) {
+
+  /* Footer */
+  footer {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1150px;
+    margin-top: 10px;
+  }
+
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    /* Agregar espacio entre el footer y la parte superior */
+  }
+
+  .footerItem {
+    flex: 1;
+    min-width: 200px;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+  }
+
+  .footerLogo {
+    display: flex;
+    justify-content: center;
+    /* Centra el logo horizontalmente */
+    align-items: center;
+    /* Centra el logo verticalmente */
+    margin: 20px 0;
+    width: 100%;
+    /* Asegura que ocupe todo el ancho del contenedor */
+  }
+
+  .footerLogo img {
+    width: 65%;
+    /* Controla el tamaño del logo */
+    margin: 0;
+    /* Elimina cualquier margen que lo pueda descentrar */
+  }
+
+  .companyInfoIconsContainer,
+  .socialInfoIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px;
+  }
+
+  .iconItem,
+  .socialIconItem {
+    margin: 10px;
+  }
+
+  .companyInfoLinksContainer,
+  .socialInfoLinksContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 5px;
+  }
+
+  .iconItem,
+  .linkItem,
+  .socialLinkItem {
+    display: flex;
+    align-items: center;
+    /* Alinea el texto con los íconos */
+    margin: 15px 0;
+    /* Aumentar el espacio entre íconos y enlaces */
+  }
+
+  .footerSlogan h3,
+  .footerSloganSocial h3 {
+    font-size: 26px;
+  }
+
+  .footerLinks {
+    justify-content: center;
+    padding: 20px 5px;
+  }
+
+  .footerRouterLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerRouterLinks li {
+    margin: 5px 0;
+  }
+
+  .footerSeparator {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background-color: #002b39;
+  }
+
+  .footerRow {
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  .footerRow p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 128px) and (max-width: 575px) and (orientation: landscape) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  footer {
+    background-color: #ffffff;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    /* Cambiado a auto para evitar que el footer sea demasiado alto */
+    margin-top: 5px;
+  }
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra horizontalmente los elementos dentro del contenedor */
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    /* Espacio entre el footer y la parte superior */
+  }
+
+  .footerItem {
+    margin: 10px;
+    max-width: 90%;
+    /* Limita el ancho del ítem para evitar desbordes */
+    text-align: center;
+    /* Centra el texto dentro del ítem */
+  }
+
+  .footerLogo {
+    display: flex;
+    justify-content: center;
+    /* Centra el logo horizontalmente */
+    align-items: center;
+    /* Centra el logo verticalmente */
+    margin: 20px 0;
+    width: 100%;
+    /* Asegura que ocupe todo el ancho del contenedor */
+  }
+
+  .footerLogo img {
+    width: 45%;
+    /* Controla el tamaño del logo */
+    margin: 0;
+    /* Elimina cualquier margen que lo pueda descentrar */
+  }
+
+  .companyInfoIconsContainer,
+  .socialInfoIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px;
+  }
+
+  .iconItem,
+  .socialIconItem {
+    margin: 10px;
+  }
+
+  .companyInfoLinksContainer,
+  .socialInfoLinksContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 5px;
+  }
+
+  .iconItem,
+  .linkItem,
+  .socialLinkItem {
+    display: flex;
+    align-items: center;
+    /* Alinea el texto con los íconos */
+    margin: 15px 0;
+    /* Aumenta el espacio entre íconos y enlaces */
+  }
+
+  .footerSlogan h3,
+  .footerSloganSocial h3 {
+    font-size: 26px;
+    text-align: center;
+    /* Centra el texto del eslogan */
+  }
+
+  .footerLinks {
+    justify-content: center;
+    padding: 20px 5px;
+  }
+
+  .footerRouterLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footerRouterLinks li {
+    margin: 5px 0;
+  }
+
+  .footerSeparator {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background-color: #002b39;
+  }
+
+  .footerRow {
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  .footerRow p {
+    font-size: 14px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 85%;
+  }
+
+  .footerRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .footerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10px;
+  }
+
+  .footerLogo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 110px;
+  }
+
+  .companyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background-color: #ffffff;
+    margin-top: 1px;
+  }
+
+
+  .companyInfoLinksContainer,
+  .socialInfoLinksContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 1px;
+  }
+
+  .companyInfoIconsContainer,
+  .socialInfoIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+  }
+
+
+
+  .iconItem,
+  .linkItem,
+  .socialLinkItem {
+    display: flex;
+    align-items: center;
+    /* Alinea el texto con los íconos */
+    margin: 10px 0;
+    /* Aumentar el espacio entre íconos y enlaces */
+  }
+
+  .footerSlogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+  }
+
+  .footerSlogan h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    margin: 15px 0px;
+  }
+
+  .footerRouterLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footerRouterLinks li {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .footerSloganSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+  }
+
+  .footerSloganSocial h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .socialInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+    margin: 5px 0px;
+  }
+
+  .socialLinkItem {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .socialIconItem {
+    margin: 10px;
+  }
+
+  .socialLinkItem a {
+    text-align: left;
+    font-size: 15px;
+    color: #002b39;
+    text-decoration: none;
+  }
+
+  .linkItem a {
+    text-align: left;
+    font-size: 13.5px;
+    color: #002b39;
+    text-decoration: none;
+  }
+
+  .linkItem button {
+    font-size: 13px;
+  }
+
+  .fa-2x {
+    font-size: 1.5rem;
+    /* Ajusta este valor según el tamaño que desees */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+  footer {
+    height: 380px;
+  }
+
+  .footerContainer {
+    height: 90%;
+  }
+
+  .footerRow {
+    height: 10%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  footer {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+  }
+
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 85%;
+  }
+
+  .footerRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .footerRow p {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+  }
+
+  .text-link {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .footerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10px;
+  }
+
+  .footerLogo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 110px;
+  }
+
+  .companyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background-color: #ffffff;
+    margin-top: 1px;
+  }
+
+
+  .companyInfoLinksContainer,
+  .socialInfoLinksContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 1px;
+  }
+
+  .companyInfoIconsContainer,
+  .socialInfoIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+  }
+
+
+
+  .iconItem,
+  .linkItem,
+  .socialLinkItem {
+    display: flex;
+    align-items: center;
+    /* Alinea el texto con los íconos */
+    margin: 10px 0;
+    /* Aumentar el espacio entre íconos y enlaces */
+  }
+
+  .footerSlogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+  }
+
+  .footerSlogan h3 {
+    font-size: 24px;
+    color: #002b39;
+    text-align: center;
+  }
+
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    margin: 15px 0px;
+  }
+
+  .footerRouterLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footerRouterLinks li {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .footerSloganSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+  }
+
+  .footerSloganSocial h3 {
+    font-size: 24px;
+    color: #002b39;
+    text-align: center;
+  }
+
+  .socialInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+    margin: 5px 0px;
+  }
+
+
+
+  .socialLinkItem {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .socialLinkItem a {
+    text-align: left;
+    font-size: 16px;
+    color: #002b39;
+    text-decoration: none;
+  }
+
+  .linkItem a {
+    text-align: left;
+    font-size: 16px;
+    color: #002b39;
+    text-decoration: none;
+  }
+
+  .fa-2x {
+    font-size: 1.5rem;
+    /* Ajusta este valor según el tamaño que desees */
+  }
+
+}

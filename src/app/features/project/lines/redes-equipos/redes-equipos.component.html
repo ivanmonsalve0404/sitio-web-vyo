@@ -1,0 +1,55 @@
+<section>
+    <article class="image-container">
+        <div id="carouselExampleIndicators" class="carousel slide" aria-live="polite" aria-atomic="true"
+            data-bs-ride="carousel" data-bs-interval="2500" role="region" aria-roledescription="carousel"
+            aria-label="Imágenes destacadas">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://res.cloudinary.com/dkmvcyh3y/image/upload/v1733251212/Redes_t43itl.png"
+                        class="d-block w-100" alt="Imagen de Servicios">
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="cards-services-container">
+        <div class="cards-title-container">
+            <h2>Proyectos destacados</h2>
+        </div>
+        <div class="cards-description-container">
+            <p>Mantenimiento preventivo y correctivo de redes eléctricas, fibra óptica, generadores diésel y motores de
+                sistemas contra incendios. Garantizamos operatividad continua y segura de sistemas críticos mediante
+                inspecciones periódicas y reparaciones especializadas.</p>
+        </div>
+        <div class="cards-container">
+            <div class="card-container">
+                <div class="image-proyect-container"
+                    [routerLink]="['/proyectos/redes-equipos/instalacion-red-fibra-optica']">
+                    <img src="https://res.cloudinary.com/dyjf6o0iw/image/upload/v1733453862/file_67_pod2cj.jpg"
+                        alt="Project Image" class="feature-image">
+                    <div class="image-overlay">
+                        <i class="fa-solid fa-folder-closed" style="color: #7ADA00;"></i>
+                        <p>Ver proyecto</p>
+                    </div>
+                </div>
+                <div class="name-proyect-container">
+                    <p>Instalación Red de Fibra Óptica</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="image-proyect-container"
+                    [routerLink]="['/proyectos/redes-equipos/mantenimiento-plantas-diesel']">
+                    <img src="https://res.cloudinary.com/dyjf6o0iw/image/upload/v1733454794/file_73_lmkgmb.jpg"
+                        alt="Project Image" class="feature-image">
+                    <div class="image-overlay">
+                        <i class="fa-solid fa-folder-closed" style="color: #7ADA00;"></i>
+                        <p>Ver proyecto</p>
+                    </div>
+                </div>
+                <div class="name-proyect-container">
+                    <p>Mantenimiento de Plantas Diésel</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <app-back-button></app-back-button>
+</section>

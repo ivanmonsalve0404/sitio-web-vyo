@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="valuesTitleContainer">
+        <h2>Acerca de nuestro equipo</h2>
+    </div>
+    <!-- Navegación mejorada -->
+    <nav class="navbar">
+        <button *ngFor="let tab of ['mision', 'vision', 'enfoque']" 
+                (click)="selectTab(tab)"
+                [class.active]="selectedTab === tab">
+            <i [class]="getTabIcon(tab)"></i>
+            {{ tab | titlecase }}
+        </button>
+    </nav>
+
+    <!-- Contenido con nuevo diseño -->
+    <section class="content" [@fadeAnimation]="selectedTab">
+        <ng-container [ngSwitch]="selectedTab">
+            <div *ngSwitchCase="'mision'" class="content-card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-circle-up"></i>
+                </div>
+                <div class="text-content">
+                    <h2>Misión</h2>
+                    <p>Vega y Ortiz SAS, ofrece servicios especializados en construcción de obras civiles, 
+                       consultorías y suministros, impulsados por la innovación y la excelencia. Nuestra misión es crear valor en cada proyecto garantizando 
+                       nuestra dedicación a la calidad, el cuidado del medio ambiente y la seguridad y salud en el trabajo.</p>
+                    <p>Nuestro equipo de profesionales competentes y comprometidos se esfuerza por superar las expectativas de nuestros 
+                       clientes y partes interesadas, mediante un enfoque de mejora continua y una cultura de excelencia</p>
+                </div>
+            </div>
+
+            <div *ngSwitchCase="'vision'" class="content-card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="text-content">
+                    <h2>Visión</h2>
+                    <p>Vega y Ortiz SAS será en el 2030 una empresa líder a nivel regional y nacional en construcción de obras civiles, 
+                       suministros y servicios de mantenimiento</p>
+                </div>
+            </div>
+
+            <div *ngSwitchCase="'enfoque'" class="content-card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-users-gear"></i>
+                </div>
+                <div class="text-content">
+                    <h2>Enfoque</h2>
+                    <div class="enfoque-section">
+                        <h3>Nuestro Equipo</h3>
+                        <p>El éxito de nuestra empresa se debe al equipo de profesionales altamente calificados y al ambiente 
+                           participativo que fomentamos. Valoramos la libre expresión de ideas y opiniones, lo que nos permite 
+                           desarrollar políticas de calidad que mejoran continuamente nuestro servicio al cliente.</p>
+                    </div>
+                    <div class="enfoque-section">
+                        <h3>Nuestros Estándares</h3>
+                        <p>Nos destacamos por ofrecer servicios que cumplen estrictamente con normas de calidad, 
+                           medio ambiente, seguridad y salud en el trabajo. Nuestra principal política se centra en 
+                           cumplir nuestras obligaciones con un enfoque riguroso en la preservación de la integridad 
+                           física y psicosocial de todo nuestro equipo.</p>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </section>
+</div>

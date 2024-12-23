@@ -1,0 +1,24 @@
+<header>
+    <nav class="navBarContainer">
+        <div class="logotypeContainer">
+            <img src="https://res.cloudinary.com/dyjf6o0iw/image/upload/v1728401664/Logo_VyO-removebg-preview_ugtcg1.png"
+                class="logo" alt="logoPrincipal" routerLink="/home" />
+        </div>
+        <div class="navLinksContainer">
+            <div class="menuIcon" (click)="openMenu()">
+                <i class="fa-solid fa-bars fa-sm" style="color: #015874;"></i>
+            </div>
+            <div class="desktopMenu" [class.mobileMenu]="menuValue">
+                <ul class="navList">
+                    <li [routerLink]="['/inicio']" (click)="closeMenu()" (click)="setActive($event)" [ngClass]="{'active': activeIndex === 0}">Inicio</li>
+                    <li [routerLink]="['inicio']" fragment="nosotros" (click)="closeMenu()" (click)="setActive($event)" [ngClass]="{'active': activeIndex === 1}">Nosotros</li>
+                    <li [routerLink]="['/documentacion']" (click)="closeMenu()" (click)="setActive($event)" [ngClass]="{'active': activeIndex === 2}">Documentación</li>
+                    <li [routerLink]="['/proyectos']" (click)="closeMenu()" (click)="setActive($event)" [ngClass]="{'active': activeIndex === 3}">Proyectos</li>
+                    <li [routerLink]="['/inicio']" fragment="contacto" (click)="closeMenu()" (click)="setActive($event)" [ngClass]="{'active': activeIndex === 4}">Contacto</li>
+                    <!--<li onclick="window.open('https://www.facebook.com/', '_blank')" (click)="setActive($event)" class="buttonLogIn" [ngClass]="{'active': activeIndex === 5}">Ingresar</li>-->
+                    <li [routerLink]="['/portal-administrativo']" (click)="setActive($event)" class="buttonLogIn" [ngClass]="{'active': activeIndex === 5}">Ingresar</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

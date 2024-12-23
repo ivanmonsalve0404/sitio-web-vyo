@@ -1,0 +1,401 @@
+/* Estilos generales para el header y la barra de navegación */
+header {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.navBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.logotypeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.logo {
+    width: 50%;
+    height: 90%;
+    cursor: pointer;
+}
+
+.navLinksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+}
+
+.menuIcon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktopMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px 40px 0px 0px;
+    z-index: 2;
+}
+
+.desktopMenu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.desktopMenu ul li {
+    list-style-type: none;
+    color: rgb(26, 26, 26);
+    font-size: 18px;
+    margin-left: 26px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.desktopMenu ul li.active {
+    color: orange !important; /* El texto se mantendrá naranja */
+}
+
+.desktopMenu ul li:hover {
+    transform: scale(1.07);
+    color: orange;
+}
+
+.desktopMenu ul li.buttonLogIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0055ff; /* Fondo azul */
+    color: #ffffff !important; /* Fuerza el color blanco */
+    padding: 0px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.desktopMenu ul li.buttonLogIn:hover {
+    background-color: #46ff46; /* Fondo verde claro en hover */
+    color: #ffffff !important; /* Mantiene el color blanco */
+}
+
+/* Media queries para dispositivos móviles pequeños (128px a 575px) */
+@media screen and (min-width: 128px) and (max-width: 575px) {
+    
+    header {
+        height: 120px;
+    }
+
+    .logotypeContainer {
+        width: 65%;
+        margin: 0px 0px 0px 40px;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        width: 50%;
+        height: 80%;
+        cursor: pointer;
+    }
+
+    .navLinksContainer {
+        width: 35%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktopMenu {
+        position: fixed !important;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        left: -400px;
+        top: 120px;
+        transition: 0.4s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        width: 70%;
+        height: 90%;
+    }
+
+    .desktopMenu ul {
+        flex-direction: column;
+    }
+
+    .navList {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 15px;
+    }
+
+    .navList li {
+        padding: 15px 10px;
+        font-size: 24px !important;
+    }
+
+    .menuIcon {
+        display: block;
+        color: black;
+        font-size: 48px;
+    }
+
+    .mobileMenu {
+        left: 0;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+/* Media queries para pantallas medianas (576px a 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    header {
+        height: 120px;
+    }
+ 
+    .logotypeContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 100%;
+    }
+
+    .logo {
+        width: 70%;
+        height: 80%;
+        cursor: pointer;
+    }
+
+    .navLinksContainer {
+        width: 70%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menuIcon {
+        display: block;
+        color: black;
+        font-size: 45px;
+        margin: 0px 30px 0px 0px;
+    }
+
+    .desktopMenu {
+        position: fixed !important;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255);
+        left: -1200px;
+        top: 120px;
+        transition: 0.4s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 40%;
+    }
+
+    .desktopMenu ul {
+        flex-direction: column;
+    }
+
+    .navList {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navList li {
+        font-size: 54px;
+    }
+
+    .mobileMenu {
+        left: 0;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+/* Media queries para pantallas medianas (768px a 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    header {
+        height: 120px;
+    }
+
+    .logotypeContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 100%;
+    }
+
+    .logo {
+        width: 45%;
+        height: 80%;
+        cursor: pointer;
+    }
+
+    .navLinksContainer {
+        width: 65%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menuIcon {
+        display: block;
+        color: black;
+        font-size: 45px !important;
+        margin: 0px 30px 0px 0px;
+    }
+
+    .desktopMenu {
+        position: fixed !important;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255);
+        left: -1450px;
+        top: 120px;
+        transition: 0.4s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 45%;
+    }
+
+    .desktopMenu ul {
+        flex-direction: column;
+    }
+
+    .navList {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navList li {
+        font-size: 64px;
+    }
+
+    .mobileMenu {
+        left: 0;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+/* Media queries para pantallas medianas (768px a 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+    header {
+        height: 120px;
+    }
+ 
+    .logotypeContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 100%;
+    }
+
+    .logo {
+        width: 40%;
+        height: 80%;
+        cursor: pointer;
+    }
+
+    .navLinksContainer {
+        display: flex;
+        width: 65%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menuIcon {
+        display: block;
+        color: black;
+        font-size: 30px;
+        margin: 0px 30px 0px 0px;
+    }
+
+    .desktopMenu {
+        position: fixed !important;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255);
+        left: -1450px;
+        top: 120px;
+        transition: 0.4s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 72.5%;
+    }
+
+    .desktopMenu ul {
+        flex-direction: column;
+    }
+
+    .navList {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navList li {
+        font-size: 15px !important;
+    }
+
+    .desktopMenu ul li.buttonLogIn {
+        padding: 5px 5px;
+    }
+
+    .mobileMenu {
+        left: 0;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+/* Media queries para pantallas medianas (992px a 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .logo {
+        width: 140px;
+        height: 80px;
+        cursor: pointer;
+    }
+}
+
+/* Media queries para pantallas grandes (1200px en adelante) */
+@media screen and (min-width: 1200px) {
+    .logo {
+        width: 150px;
+        height: 90px;
+        cursor: pointer;
+    }
+
+    .navList {
+        margin: 0px 40px 0px 0px;
+    }
+}

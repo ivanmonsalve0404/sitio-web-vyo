@@ -1,0 +1,224 @@
+section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    background: linear-gradient(135deg, #ffffff, #f5f7fa);
+    overflow: hidden;
+    z-index: 0;
+}
+
+section::before,
+section::after {
+    content: '';
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    z-index: -1;
+}
+
+section::before {
+    left: -20%;
+    top: -20%;
+    background: linear-gradient(45deg, rgba(1, 88, 116, 0.08), rgba(1, 88, 116, 0.03));
+    border-radius: 50%;
+    transform: rotate(-15deg);
+    animation: floatLeft 15s infinite ease-in-out;
+}
+
+section::after {
+    right: -20%;
+    top: 10%;
+    background: linear-gradient(-45deg, rgba(0, 150, 199, 0.08), rgba(0, 150, 199, 0.03));
+    border-radius: 50%;
+    transform: rotate(15deg);
+    animation: floatRight 18s infinite ease-in-out;
+}
+
+@keyframes floatLeft {
+
+    0%,
+    100% {
+        transform: rotate(-15deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-15deg) translateY(-20px);
+    }
+}
+
+@keyframes floatRight {
+
+    0%,
+    100% {
+        transform: rotate(15deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(15deg) translateY(20px);
+    }
+}
+
+.add-general-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+.add-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.add-title-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+.add-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 3rem 1rem auto;
+    overflow: hidden;
+}
+
+
+.add-container h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.add-container h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin: 1rem 0 0 2rem;
+    text-align: left;
+}
+
+.add-container p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin: 1rem 0 0 2rem;
+    text-align: justify;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+
+    .add-container {
+        margin: 0rem 1rem; /* Reducido margen horizontal */
+        padding: 1rem;
+    }
+
+    .add-title-container h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .add-container h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .add-container h3 {
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+
+    .add-container p {
+        font-size: 14px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    ul {
+        margin-left: 1.5rem;
+        margin-right: 1rem;
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    .add-container {
+        margin: 0rem 1.5rem; /* Ajustado margen horizontal */
+        padding: 1.5rem;
+    }
+
+    .add-title-container h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .add-container h2 {
+        font-size: 22px;
+    }
+
+    .add-container h3 {
+        font-size: 20px;
+        margin-left: 1.5rem;
+    }
+
+    .add-container p {
+        font-size: 15px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    ul {
+        margin-left: 2rem;
+    }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media screen and (min-width: 992px) {
+
+    .add-container {
+        margin: 0rem 2rem; /* Margen amplio para grandes pantallas */
+        padding: 2rem;
+    }
+
+    .add-title-container h1 {
+        font-size: 36px;
+    }
+
+    .add-container h2 {
+        font-size: 26px;
+    }
+
+    .add-container h3 {
+        font-size: 22px;
+        margin-left: 2rem;
+    }
+
+    .add-container p {
+        font-size: 16px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    ul {
+        margin-left: 2.5rem;
+    }
+}
+
